@@ -31,37 +31,6 @@ Begin by installing the library via your preferred package manager, then follow 
 
 ---
 
-## Add Function ( Simple code )
-
-### Check ID Channel
-Get ID channel 
-
-```javascript
-await sock.newsletterId(url)
-```
-
-### Check banned number
-You can see the status of blocked numbers here 
-
-```javascript
-await sock.checkWhatsApp(jid)
-```
-
----
-
-## SendMessage Documentation
-
-### Status Group Message V2
-Send group status with version 2 
-
-```javascript
-await sock.sendMessage(jid, {
-     groupStatusMessage: {
-          text: "Hello World"
-     }
-});
-```
-
 ### Album Message (Multiple Images)
 Send multiple images in a single album message:
 
@@ -82,13 +51,13 @@ await sock.sendMessage(jid, {
     eventMessage: { 
         isCanceled: false, 
         name: "Hello World", 
-        description: "yume native", 
+        description: "#ThisIsGanzX", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
             name: "rowrrrr" 
         }, 
-        joinLink: "https://call.whatsapp.com/video/yumevtc", 
+        joinLink: "https://call.whatsapp.com/video/ganz", 
         startTime: "1763019000", 
         endTime: "1763026200", 
         extraGuestsAllowed: false 
@@ -125,7 +94,7 @@ await sock.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc ",
+        footer: "telegram: @coganzhost ",
         buttons: [
             {
                 name: "cta_copy",
@@ -148,26 +117,26 @@ await sock.sendMessage(jid, {
     interactiveMessage: {      
         header: "Hello World",
         title: "Hello World",      
-        footer: "telegram: @yumevtc",      
+        footer: "telegram: @coganzhost",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "https://t.me/yumevtc",            
-                    copy_code: "yume",            
+                    url: "https://t.me/coganzhost",            
+                    copy_code: "#ThisIsGanzX",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "yume native",            
-                    button_title: "yume native"          
+                    list_title: "ganz native",            
+                    button_title: "ganz native"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/yumevtc",            
+                    canonical_url: "https://t.me/coganzhost",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -195,7 +164,7 @@ await sock.sendMessage(jid, {
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@yumevtc",                      
+                                        title: "@coganzhost",                      
                                         description: "love you",                      
                                         id: "row_2"                    
                                     }                  
@@ -227,7 +196,7 @@ await sock.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @coganzhost",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -280,10 +249,10 @@ await sock.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @coganzhost",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "yumevtc.pdf",
+        fileName: "ganz.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         contextInfo: {
             mentionedJid: [jid],
@@ -296,7 +265,7 @@ await sock.sendMessage(jid, {
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/yumevtc",
+            sourceUrl: "https://t.me/coganzhost",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -305,8 +274,8 @@ await sock.sendMessage(jid, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/yumevtc",
-                    merchant_url: "https://t.me/yumevtc"
+                    url: "https://t.me/coganzhost",
+                    merchant_url: "https://t.me/coganzhost"
                 })
             }
         ]
@@ -322,18 +291,18 @@ await sock.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @coganzhost",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "yumevtc.pdf",
+        fileName: "ganz.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         buttons: [
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/yumevtc",
-                    merchant_url: "https://t.me/yumevtc"
+                    url: "https://t.me/coganzhost",
+                    merchant_url: "https://t.me/coganzhost"
                 })
             }
         ]
